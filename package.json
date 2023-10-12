@@ -5,7 +5,7 @@
   "type": "module",
   "main": "./src/backend/server.js",
   "scripts": {
-    "dev:frontend": "vite",
+    "dev:frontend": "vite --host",
     "dev:backend": "nodemon server.js",
     "dev": "concurrently 'npm:dev:frontend' 'npm:dev:backend'",
     "build": "vite build",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "axios": "^1.5.1",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "jest": "^29.7.0",
     "puppeteer": "^21.3.8",
